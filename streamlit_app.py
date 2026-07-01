@@ -1,5 +1,15 @@
 import streamlit as st
+from gtts import gTTS
+import io
+text = "Namasthe, Mera naam Raja, Log mujhe kehte hai Rockey Bhai"
+if st.button("Play Telugu Speech"):
+    tts = gTTS(text=text, lang="te", slow=False)
 
+    audio = io.BytesIO()
+    tts.write_to_fp(audio)
+    audio.seek(0)
+
+    st.audio(audio, format="audio/mp3")
 st.markdown("""
 <!DOCTYPE html>
 <html>
