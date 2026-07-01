@@ -1,6 +1,18 @@
-import streamlit as st
-
-st.title("🎈 My new app")
-st.write(
-    "Let's start building! For help and inspiration, head over to [docs.streamlit.io](https://docs.streamlit.io/)."
-)
+from bs4 import BeautifulSoup
+html_code = "<!DOCTYPE html>
+<html>
+<head>
+  <title>Raja Telagathoti</title>
+</head>
+<body>
+  <h1>
+    Raja Telagathoti
+  </h1>
+  <h6>Click the button below to download Quran</h6>
+  <a href = "https://github.com/rajatelagathoti/Hapsa/blob/main/Telugu%20Quran.pdf">Click here</a>
+  <h6>Click the button below to listen to the Quran</h6>
+  <a href = "">Click here</a>
+</body>
+</html>
+"
+soup = BeutifulSoup(html_code, "html_parser"
