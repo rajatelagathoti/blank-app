@@ -1,5 +1,7 @@
-from bs4 import BeautifulSoup
-html_code = "<!DOCTYPE html>
+import streamlit as st
+
+st.markdown("""
+<!DOCTYPE html>
 <html>
 <head>
   <title>Raja Telagathoti</title>
@@ -14,5 +16,4 @@ html_code = "<!DOCTYPE html>
   <a href = "">Click here</a>
 </body>
 </html>
-"
-soup = BeutifulSoup(html_code, "html_parser"
+""", unsafe_allow_html=True)
