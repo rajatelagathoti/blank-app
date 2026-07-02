@@ -1,7 +1,7 @@
 import streamlit as st
 from gtts import gTTS
 import io
-text = "Namasthe, Mera naam Raja, Log mujhe kehte hai Rockey Bhai"
+text = "అల్లాహ్ హు అక్బర్"
 st.markdown("""
 <!DOCTYPE html>
 <html>
